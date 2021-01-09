@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp"
+    tools:context=".MenuActivity">
+
+    <ImageButton
+        android:id="@+id/btnImgHobbies"
+        android:layout_width="155dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="goToFriendsActivity"
+        app:layout_constraintBottom_toTopOf="@+id/btnImgHobbies14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImgHobbies13"
+        app:srcCompat="@drawable/img1" />
+
+    <ImageButton
+        android:id="@+id/btnImgHobbies13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="goToHobbiesActivity"
+        app:layout_constraintBottom_toTopOf="@+id/btnImgHobbies"
+        app:layout_constraintEnd_toEndOf="@+id/btnImgHobbies"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImgHobbies"
+        app:layout_constraintTop_toBottomOf="@+id/emptyTextView"
+        app:srcCompat="@drawable/img2" />
+
+    <ImageButton
+        android:id="@+id/btnImgHobbies14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="goToLeaveAMessageActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnImgHobbies"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnImgHobbies"
+        app:layout_constraintTop_toBottomOf="@+id/btnImgHobbies"
+        app:srcCompat="@drawable/img3" />
+
+    <TextView
+        android:id="@+id/saludo"
+        android:layout_width="304dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="HOLA"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/emptyTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emptyTextView"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="53dp"
+        android:width="200dp"
+        android:text=""
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnImgHobbies13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saludo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
